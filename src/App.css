@@ -1,38 +1,52 @@
-.App {
+body {
+  background: linear-gradient(to bottom right, #585a8a 0%, #ff99cc 100%);
+}
+.cardd {
+  margin-top: 150px;
+}
+.card {
+  padding: 60px 60px;
+  border-radius: 20;
+}
+.heading {
   text-align: center;
 }
+.card1 {
+  background-image: url("./images/login-back.svg");
+  background-size: 250px 330px;
+  background-repeat: no-repeat;
+  background-position: center;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-color: #403e56;
+}
+.card2 {
+  background-color: #f9f9f9;
+}
+select {
+  padding-left: 20px;
+  text-align: center;
+}
+.card2 p {
+  font-size: 16;
+  text-align: center;
+  margin-top: 20px;
+}
+h3 {
+  font-size: 20;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 600px) {
+  .card1 {
+    display: none;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .cardd {
+    margin: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  .card {
+    margin: 0px 0px;
+    padding: 60px 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
   }
 }
